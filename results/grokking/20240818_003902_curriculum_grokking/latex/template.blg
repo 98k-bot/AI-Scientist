@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: template.aux
+The style file: iclr2024_conference.bst
+Database file #1: references.bib
+Repeated entry---line 196 of file references.bib
+ : @article{Bengio2009CurriculumL
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 205 of file references.bib
+ : @article{Bengio2009CurriculumL
+ :                               ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in Bengio2009CurriculumL
+You've used 8 entries,
+            2773 wiz_defined-function locations,
+            637 strings with 6559 characters,
+and the built_in function-call counts, 4529 in all, are:
+= -- 350
+> -- 428
+< -- 3
++ -- 143
+- -- 135
+* -- 408
+:= -- 749
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 67
+chr.to.int$ -- 8
+cite$ -- 17
+duplicate$ -- 168
+empty$ -- 262
+format.name$ -- 145
+if$ -- 903
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 9
+newline$ -- 48
+num.names$ -- 32
+pop$ -- 133
+preamble$ -- 1
+purify$ -- 60
+quote$ -- 0
+skip$ -- 156
+stack$ -- 0
+substring$ -- 36
+swap$ -- 15
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 83
+warning$ -- 1
+while$ -- 26
+width$ -- 0
+write$ -- 107
+(There were 2 error messages)

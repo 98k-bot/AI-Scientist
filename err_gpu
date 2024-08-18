@@ -647,3 +647,66 @@ Traceback (most recent call last):
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: ModDivisonDataset.fetch_output() takes 3 positional arguments but 4 were given
 
+Traceback (most recent call last):
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 396, in <module>
+    final_info, train_info, val_info = run(args.out_dir, dataset, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 339, in run
+    train_metrics = train(
+                    ^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 231, in train
+    for batch in train_loader:
+  File "/common/zhanh/anaconda3/envs/ai_scientist/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/common/zhanh/anaconda3/envs/ai_scientist/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/common/zhanh/anaconda3/envs/ai_scientist/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 33, in fetch
+    data.append(next(self.dataset_iter))
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 124, in __next__
+    x, y, _ = self.fetch_f()
+              ^^^^^^^^^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 55, in fetch_train_example
+    return self.fetch_example(idx, difficulty)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 49, in fetch_example
+    c = self.fetch_output(a, b, difficulty)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ModSubtractDataset.fetch_output() takes 3 positional arguments but 4 were given
+
+Traceback (most recent call last):
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 396, in <module>
+    final_info, train_info, val_info = run(args.out_dir, dataset, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 339, in run
+    train_metrics = train(
+                    ^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 231, in train
+    for batch in train_loader:
+  File "/common/zhanh/anaconda3/envs/ai_scientist/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/common/zhanh/anaconda3/envs/ai_scientist/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/common/zhanh/anaconda3/envs/ai_scientist/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 33, in fetch
+    data.append(next(self.dataset_iter))
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 124, in __next__
+    x, y, _ = self.fetch_f()
+              ^^^^^^^^^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 55, in fetch_train_example
+    return self.fetch_example(idx, difficulty)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/common/zhangz2lab/zhanh/AI-Scientist/results/grokking/20240818_003902_curriculum_grokking/experiment.py", line 49, in fetch_example
+    c = self.fetch_output(a, b, difficulty)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PermutationGroup.fetch_output() takes 3 positional arguments but 4 were given
+
+/common/zhanh/anaconda3/envs/ai_scientist/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/common/zhanh/anaconda3/envs/ai_scientist/lib/python3.11/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+

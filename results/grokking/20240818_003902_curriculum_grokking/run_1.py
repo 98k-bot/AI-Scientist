@@ -78,7 +78,7 @@ class ModSubtractDataset(AbstractDataset):
         )
         self.p = p
 
-    def fetch_output(self, a, b):
+    def fetch_output(self, a, b, difficulty=0.2):
         return (a - b) % self.p
 
 
@@ -99,7 +99,7 @@ class PermutationGroup(AbstractDataset):
         super(PermutationGroup, self).__init__(perms, perms, frac_train)
         self.k = k
 
-    def fetch_output(self, a, b):
+    def fetch_output(self, a, b, difficulty=0.2):
         return tuple([a[b[i]] for i in range(len(b))])
 
 
