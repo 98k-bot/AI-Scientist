@@ -1,0 +1,5 @@
+# Title: The Impact of Input Noise on Grokking: A Study of Robustness and Generalization
+# Experiment description: Modify the train function to add Gaussian noise to the input data with varying levels of noise. Analyze the model's generalization performance and training dynamics.
+## Run 0: Baseline
+Results: {'x_div_y': {'final_train_loss_mean': 0.01533896243199706, 'final_val_loss_mean': 0.01599902535478274, 'final_train_acc_mean': 1.0, 'final_val_acc_mean': 1.0, 'step_val_acc_99_mean': 4430.0}, 'x_minus_y': {'final_train_loss_mean': 0.005989215802401304, 'final_val_loss_mean': 0.006725737048933904, 'final_train_acc_mean': 1.0, 'final_val_acc_mean': 1.0, 'step_val_acc_99_mean': 4133.333333333333}, 'x_plus_y': {'final_train_loss_mean': 0.005031185690313578, 'final_val_loss_mean': 0.005483842299630244, 'final_train_acc_mean': 1.0, 'final_val_acc_mean': 1.0, 'step_val_acc_99_mean': 2266.6666666666665}, 'permutation': {'final_train_loss_mean': 0.15810630470514297, 'final_val_loss_mean': 7.193933169047038, 'final_train_acc_mean': 0.9739583333333334, 'final_val_acc_mean': 0.017659505208333332, 'step_val_acc_99_mean': 7500.0}}
+Description: Baseline results.
