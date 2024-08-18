@@ -46,12 +46,14 @@ def parse_arguments():
     parser.add_argument(
         "--model",
         type=str,
-        default="claude-3-5-sonnet-20240620",
+	default="llama3.1-405b",
+        #default="claude-3-5-sonnet-20240620",
         choices=[
             "claude-3-5-sonnet-20240620",
             "gpt-4o-2024-05-13",
             "deepseek-coder-v2-0724",
             "llama3.1-405b",
+	    "meta-llama/Meta-Llama-3-8B",
             # Anthropic Claude models via Amazon Bedrock
             "bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
             "bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0",
@@ -308,6 +310,16 @@ if __name__ == "__main__":
             api_key=os.environ["OPENROUTER_API_KEY"],
             base_url="https://openrouter.ai/api/v1"
         )
+    elif args.model == "meta-llama/Meta-Llama-3-8B":
+        from transformers import AutoTokenizer, AutoModelForCausalLM
+        print(f"Using Hugging Face model {args.model} locally.")
+        client_model = "meta-llama/Meta-Llama-3-8B"
+
+        # Load model and tokenizer from the cloned directory
+        local_model_dir = "/common/zhangz2lab/zhanh/AI-Scientist/Meta-Llama-3-8B"  # Update this path to where you cloned the model
+        tokenizer = AutoTokenizer.from_pretrained(local_model_dir)
+        model = AutoModelForCausalLM.from_pretrained(local_model_dir)
+
     else:
         raise ValueError(f"Model {args.model} not supported.")
 
